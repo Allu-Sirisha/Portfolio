@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapies.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+   
+}
+:root{
+   --main-color:#033a80;
+   --text-color:#0f0c27;
+   --bg-color:#fff;
+   --hover-color:#5805ff;
+   --big-font:3.2rem;
+   --medium-font:1.8rem;
+   --p--font:0.941rem;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 10%;
+    background: #f4f4f4;
+}
+.logo{
+    font-size: 1.61rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.navbar{
+    display:flex;
+}
+.navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color:var(--text-color);
+    font-weight: 500;
+}
+.navbar a:hover{
+    color:var(--hover-color);
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr;
+    align-items: center;
+    gap:1rem;
+}
+.home-img img{
+    width:60%;
+    border-radius: 3.0rem;
+}
+.social {
+    display:flex;
+    flex-direction: column; 
+}
+.social a {
+    font-size: 22px;
+    margin-bottom: 1rem;
+    color:var(--text-color);
+}
+.social a:hover{
+    color: var(--hover-color); 
+}
+.home-text span {
+    font-size: var(--medium-font);
+    font-weight: 500;
+}
+.home-text h1{
+    font-size:var(--big-font);
+}
+.home-text h2{
+    font-size: 1.1rem;
+    font-weight:400;
+}
+.home-text p{
+    font-size: var(--p--font);
+    margin: 1.4rem 0.1rem;
+}
+.btn{
+    display: inline-block;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 0.7rem 1.3rem;
+    border-radius: 0.5rem;
+}
+ section{
+    padding: 50px 10%; 
+}
+.heading{
+    text-align: left;
+    padding: 0px 9px 18px;
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size: var(--p--font);
+    color: #02a646;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.about-img img{
+    width: 90%;
+    height: 70%;
+    border-radius: 3rem;
+}
+.about-text p{
+    font-size: var(--p--font);
+    text-align: left;
+}
+.information {
+    margin: 2.4rem 0;
+}
+.information .info-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.information .info-box .bx{
+    font-size: 22px;
+    margin-right: 1rem;
+}
+.skills-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 4rem;
+    gap: 2rem;
+}
+.skills-img img{
+    width: 80%;
+}
+.bar-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+.bar-box .light-bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.5rem;
+    width: 100%;
+    background-color: hsla(250, 100%, 44%, 0.4);
+    border-radius: 0.5rem;
+}
+.bar-box .percentage-bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.5rem;
+    background-color: var(--main-color);
+    border-radius: 0.5rem;
+}
+.html-bar{
+    width: 94%;
+}
+.css-bar{
+    width: 70%;
+}
+.java-bar{
+    width: 75%;
+}
+.sql-bar{
+    width: 95%;
+}
+.bar-box h3,span{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.services-content{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.services-box{
+    padding: 3rem 20px 20px;
+    box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+    width: 230px;
+    border-radius:  0.5em;
+    border-bottom: 2px solid var(--main-color);
+    text-align: center;    
+}
+.services-box:hover {
+    background-color:#02225a;
+}
+.services-box i{
+    font-size: 54px;
+    color: var(--main-color);
+}
+.services-box:hover i{
+    color: #22cf91;
+}
+.services-box h3{
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0.7rem 0 0.4rem;
+}
+.services-box:hover h3{
+    color: #fff;
+}
+.services-box a{
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: var(--p--font);
+}
+.services-box:hover a{
+    color: #8b8a8f;
+}
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+    gap:1rem;
+    margin-top:2rem;
+}
+.portfolio-img{
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.portfolio-img img{
+    width: 100%;
+    display: block;
+}
+.portfolio-img img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.contact-form{
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;    
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.contact-form form input,textarea{
+    padding: 15px;
+    border-radius:0.5rem;
+    border: none;
+    outline: none;
+    background-color:hsla(260, 100%, 44%, 0.1);
+    margin-bottom: 1rem;
+}
+.contact-form form
+input::placeholder,textarea::placeholder{
+    color:var(--text-color);
+}
+.contact-form form textarea{
+    resize: none;
+}
+.contact-form form button{
+    align-self: center;
+    width: 160px;
+    background-color: #2768d9;
+}
+.contact-form form button:hover{
+    background-color: var(--hover-color);
+}
+.footer{
+    display: grid;
+    place-items:center;
+    padding: 20px;
+    background-color: #ebebeb;
+}
+.footer h2{
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+}
+.footer-social a i{
+    color: rgb(10,26,208);
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 8px;
+    margin-left: 10px;
+}
+.copyright{
+    padding: 20px;
+    color: #fff;
+    background-color: var(--main-color);
+    text-align: center;
+}
+
+
+/* Add this part to your existing CSS */
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .home {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .home-text {
+        padding: 20px;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+    }
+
+    .home-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-text p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .about-content {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        margin-top: 13rem;
+    }
+
+    
+   
+
+}
